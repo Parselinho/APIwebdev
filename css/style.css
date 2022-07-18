@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: rgb(193, 221, 247);   
+    overflow: hidden;
+}
+body {
+    padding: 15px;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "h1 search";
+  margin-bottom: 25px;
+  padding-right: 20px;
+}
+
+#myInput {
+    grid-area: search;
+    width: 88%;
+    border-radius: 100px;
+    padding: 20px;
+    padding-right: 15px;
+    background-color: aliceblue;
+}
+
+.h1header {
+    grid-area: h1;
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+    width: 375px;
+    margin: 100px auto;
+    position: relative;
+    text-align: center;
+    background-color: beige;
+    border: 1px solid #778;
+    border-radius: 5px;
+}
+
+.modal img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 200px;
+    align-self: center;
+}
+
+.modal-content {
+  background-color: beige;
+  padding: 20px;
+  padding-bottom: 15px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.modal-content .text-container {
+    padding: 25px;
+    padding-bottom: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(193, 221, 247);
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-rows: repeat(4, 150px);
+    grid-gap: 25px;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 10px;
+}
+
+img {
+    width: 60px;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.text-container {
+    background-color: beige;
+}
+.text-container h2,
+.text-container p {
+  background-color: beige;;
+}
+
+.next {
+    color: rgb(146, 202, 255);
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    background-color: beige;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    
+
+  }
+.back {
+    background-color: beige;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(146, 202, 255);
+    font-weight: bold;
+    font-size: 30px;
+    left:0;
+  }
+  .next:hover,
+  .back:hover {
+    background-color: rgb(146, 145, 145);
+  }
